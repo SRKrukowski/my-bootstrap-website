@@ -1,0 +1,81 @@
+html {
+    scroll-behavior: smooth;
+}
+header {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+/* Navigation Bar Accents */
+.navbar-nav .nav-link.active {
+    border-bottom: 2px solid red; /* Red underline for active link */
+}
+.navbar-nav .nav-link:hover {
+    color: red; /* Red hover effect for links */
+}
+/* Section Title Accents */
+h2 {
+    position: relative;
+    padding-bottom: 5px;
+}
+h2::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 50px;
+    height: 2px;
+    background-color: red; /* Red underline for section titles */
+}
+/* Contact Form Button Accent */
+.btn.btn-primary { /* Corrected selector */
+    background-color: white;
+    color: red;
+    border: 1px solid red;
+}
+.btn.btn-primary:hover { /* Corrected selector */
+    background-color: red;
+    color: white;
+}
+/* Services Section Styles */
+#services img {
+    max-width: 350px; /* Increased image size */
+}
+
+#services h3 {
+    font-size: 2.5rem; /* Larger heading */
+    font-weight: bold; /* Bold font */
+    text-align: center; /* Center align */
+    margin-bottom: 0.75rem; /* Increased margin */
+}
+
+#services h4 {
+    font-size: 1.8rem; /* Larger subheading */
+    text-align: center; /* Center align */
+    margin-bottom: 1.25rem; /* Increased margin */
+}
+
+#services p {
+    font-size: 1.2rem; /* Larger paragraph */
+    margin-bottom: 0.8rem; /* Increased margin */
+}
+
+#services ul {
+    font-size: 1.2rem; /* Larger list */
+    margin-bottom: 0.8rem; /* Increased margin */
+}
+
+#services ul li {
+    margin-bottom: 0.6rem; /* Increased list item margin */
+}
+/* Contact me Section correction */
+#contact {
+    padding-bottom: 2rem; /* Add padding to the bottom of the contact form */
+}
