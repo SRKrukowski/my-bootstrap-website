@@ -1,25 +1,42 @@
+/* styles.css - Updated Header Styles for Reduced Padding */
+
 html {
     scroll-behavior: smooth;
 }
 header {
     width: 100vw;
-    height: 100vh;
+    /* height: 100vh;  REMOVED - No longer making header full viewport height */
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-top: 0%;      /* ADDED -  Top and bottom padding for header */
+    padding-bottom: 0%;   /* ADDED - Top and bottom padding for header */
 }
 header img {
     max-width: 100%;
     max-height: 100%;
     object-fit: contain;
 }
-/* Navigation Bar Accents */
-.navbar-nav .nav-link.active {
-    border-bottom: 2px solid red; /* Red underline for active link */
+
+/* Fix for Navbar overlapping Page Headers */
+:root {
+    scroll-padding-top: 80px; /* Adjusted to 80px based on your feedback */
 }
+
+/* Navigation Bar Accents - Red Text and Underline on Hover */
+.navbar-nav .nav-link {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.3s ease, text-decoration-color 0.3s ease;
+    text-decoration-color: transparent;
+}
+
 .navbar-nav .nav-link:hover {
-    color: red; /* Red hover effect for links */
+    color: red;
+    text-decoration: underline red;
+    text-decoration-thickness: 2px;
 }
+
 /* Section Title Accents */
 h2 {
     position: relative;
@@ -34,6 +51,7 @@ h2::after {
     height: 2px;
     background-color: red; /* Red underline for section titles */
 }
+
 /* Contact Form Button Accent */
 .btn.btn-primary { /* Corrected selector */
     background-color: white;
@@ -44,6 +62,7 @@ h2::after {
     background-color: red;
     color: white;
 }
+
 /* Services Section Styles */
 #services img {
     max-width: 350px; /* Increased image size */
@@ -75,7 +94,22 @@ h2::after {
 #services ul li {
     margin-bottom: 0.6rem; /* Increased list item margin */
 }
-/* Contact me Section correction */
+
+/* Contact me Section correction and Form Enlargement */
 #contact {
     padding-bottom: 2rem; /* Add padding to the bottom of the contact form */
+}
+
+/* Make form larger (CSS for external stylesheet) */
+#contactForm .form-control {
+    padding: 1rem 0.75rem;
+    font-size: 1.1rem;
+}
+#contactForm textarea.form-control {
+    min-height: 150px;
+}
+#contactForm button.btn {
+    font-size: 1.1rem;
+    padding: 0.75rem 1.5rem;
+    font-size: 1.1rem; /* Redundant, but included for completeness and clarity */
 }

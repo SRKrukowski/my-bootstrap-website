@@ -1,25 +1,32 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+<!DOCTYPE html><html lang="en"><head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Bootstrap Website</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
-</head>
-<body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    </head><body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
         <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="images/logo.png" alt="My Website Logo" height="60">
+            </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#about">About Me</a>
+                        <a class="nav-link" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About Me</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="resume.html">Resume</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#substack">Substack</a>
@@ -32,22 +39,25 @@
         </div>
     </nav>
     <header>
-        <img src="images/logo.png" alt="My Website Logo">
+        <img src="images/logo.png" alt="My Website Logo" class="img-fluid">
     </header>
     <div class="container mt-4" id="about">
         <h2>About Me</h2>
         <div class="text-center">
             <img src="images/profilepicture.jpg" alt="Your Picture" class="img-fluid" style="max-width: 700px;">
         </div>
-        <p class="mt-5 px-5" style="font-size: 1.2rem;">
+        <p class="mt-5 px-3 px-md-5" style="font-size: 1.2rem;">
             My journey is defined by a relentless pursuit of innovation and a deep-seated commitment to making a tangible impact. With years of experience in startup strategy and development, I've honed my ability to navigate complex challenges and drive growth in dynamic environments. My professional path has taken me through diverse landscapes, from the fast-paced world of Bloomberg to the tech-driven corridors of Microsoft, where I contributed to high-stakes projects and gained invaluable insights into cutting-edge technologies and financial markets.
         </p>
-        <p class="px-5" style="font-size: 1.2rem;">
+        <p class="px-3 px-md-5" style="font-size: 1.2rem;">
             Beyond my corporate endeavors, I am a passionate mental health advocate. Having navigated my own personal trials, I understand the importance of awareness, early intervention, and eliminating stigma. My work with NAMI (National Alliance on Mental Illness) allows me to channel my experiences into meaningful action, raising awareness and providing support to those in need. This advocacy is not just a cause, but a personal mission that drives me to create a more compassionate and understanding world.
         </p>
-        <p class="px-5" style="font-size: 1.2rem;">
+        <p class="px-3 px-md-5" style="font-size: 1.2rem;">
             My expertise spans across AI, sales, account management, and community outreach, creating a unique blend of technical acumen and interpersonal skills. I thrive on connecting with people, understanding their needs, and delivering solutions that exceed expectations. Whether it's developing innovative strategies, building strong client relationships, or advocating for mental health, I approach every endeavor with dedication and a drive for excellence.
         </p>
+        <div class="text-center mt-4">
+            <img src="images/advocacy.jpg" alt="Advocacy Picture" class="img-fluid mt-4 mb-5" style="max-width: 500px;">
+        </div>
     </div>
     <div class="container mt-4" id="services">
         <h2>Services</h2>
@@ -56,33 +66,44 @@
         </div>
         <h3>Unlock the Power of AI:</h3>
         <h4>Consulting and Education for Individuals and Businesses</h4>
-        <p class="px-5" style="font-size: 1.2rem;">
+        <p class="px-3 px-md-5" style="font-size: 1.2rem;">
             In today's rapidly evolving world, artificial intelligence is transforming industries and reshaping our lives. As an AI Consultant/Educator, I can help you navigate this exciting new frontier and harness the power of AI to achieve your goals.
         </p>
-        <p class="px-5" style="font-size: 1.2rem;">
+        <p class="px-3 px-md-5" style="font-size: 1.2rem;">
             Whether you're a business looking to integrate AI into your operations, a student eager to learn about the latest AI technologies, or an individual seeking to enhance your skills in this domain, I can provide expert guidance and tailored solutions to meet your unique needs.
         </p>
-        <p class="px-5" style="font-size: 1.2rem;">
+        <p class="px-3 px-md-5" style="font-size: 1.2rem;">
             With my deep understanding of AI concepts, practical experience in implementing AI solutions, and engaging teaching style, I can empower you to:
         </p>
-        <ul style="font-size: 1.2rem; list-style-position: inside; padding-left: 8rem;">
+        <ul style="font-size: 1.2rem; list-style-position: inside; padding-left: 5rem; padding-right: 2rem;">
             <li>Understand the fundamentals of AI and its applications</li>
             <li>Develop AI-powered products and services</li>
             <li>Optimize your business processes with AI</li>
             <li>Build a successful career in the AI field</li>
         </ul>
-        <p class="px-5" style="font-size: 1.2rem;">
+        <p class="px-3 px-md-5" style="font-size: 1.2rem;">
             Let's embark on this AI journey together and unlock the limitless possibilities that await.
         </p>
     </div>
     <div class="container mt-4" id="substack">
         <h2>Substack Integration / Comments</h2>
-        <p class="px-5" style="font-size: 1.2rem;">Embed your Substack content or comment section here.</p>
+        <p class="px-3 px-md-5" style="font-size: 1.2rem;">Embed your Substack content or comment section here.</p>
     </div>
     <div class="container mt-4" id="contact">
         <h2>Contact Me</h2>
-        <div class="row justify-content-center">
-            <div class="col-md-8 col-lg-6">
+        <div class="container mt-2 text-center">
+            <a href="https://www.facebook.com/profile.php?id=100093213292756" target="_blank" class="mx-2">
+                <i class="bi bi-facebook" style="font-size: 30px;"></i>
+            </a>
+            <a href="https://www.linkedin.com/feed/" target="_blank" class="mx-2">
+                <i class="bi bi-linkedin" style="font-size: 30px;"></i>
+            </a>
+            <a href="https://substack.com/@scottkru?utm_source=user-menu" target="_blank" class="mx-2">
+                <i class="bi bi-rss" style="font-size: 30px;"></i>
+            </a>
+        </div>
+        <div class="row justify-content-center mt-4" id="contactForm">
+            <div class="col-md-8 col-lg-8">
                 <form data-netlify="true">
                     <input type="hidden" name="form-name" value="contact" />
                     <div class="mb-3">
@@ -103,5 +124,4 @@
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-</body>
-</html>
+    </body></html>
